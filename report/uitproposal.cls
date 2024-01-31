@@ -27,7 +27,7 @@
 \newcommand{\studentname}[1]{\renewcommand{\@studentname}{#1}}
 
 \renewcommand{\thesection}{\arabic{section}}
-\renewcommand{\thesubsection}{\arabic{subsection}}
+\renewcommand{\thesubsection}{\thesection.\arabic{subsection}}
 
 % \patchcmd{\thebibliography}{\chapter*}{\section*}{}{}
 \def\headerbox {
@@ -83,7 +83,7 @@
 
 \def\vnproposalname {
     \begin{center}
-        \Large\textbf{ĐỀ CƯƠNG NGHIÊN CỨU} \\
+        \Large\textbf{BÁO CÁO THỰC HÀNH} \\
         \large\MakeUppercase{\textbf{\@proposaltype}} \\
         \vspace{3cm}
         {\large{\centering\MakeUppercase{\textbf{Tên đề tài: \@vntitle}}}} \\

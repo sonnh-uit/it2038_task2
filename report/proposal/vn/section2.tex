@@ -1,13 +1,16 @@
 \section{Giới thiệu}
-\label{introduction}
+\label{sec:introduction}
 
-Phần này nói chi tiết hơn nhưng cũng là giới thiệu đề tài. Phần này thông thường bao gồm
+\subsection{Tổng quan về bài toán phát hiện đối tượng}
 
+Phát hiện đối tượng (Object Detection) được coi là một trong những lĩnh vực quan trọng nhất trong nghiên cứu máy học nói chung và xử lý ánh nói riêng. Các mô hình phát hiện đối tượng được training nhằm nhận diện các đối tượng, phát hiện đối tượng là gì trong các hình ảnh hoặc video.
+
+Convolutional Neural Network(CNN) là một kiến trúc học sâu lấy cảm hứng từ nhận thức trực quan của sinh vật. Năm 1980 Kunihiko Fukushima\cite{fukushima1980self} đề xuất neocognitron , có thể coi là tiền thân của CNN. Kể từ đó, nhiều nghiên cứu mới về CNN đã được công bố và đưa ra nhiều thuật toán phát hiện đối tượng mạnh mẽ.
+
+Một số ứng dụng phổ biến trong phát hiện đối tượng bao gồm:
 \begin{itemize}
-    \item Trình bày các thông tin cơ bản, các nghiên cứu nổi tiếng trong lĩnh vực, các vấn đề được đặt ra và các kết quả của nó
-    \item Trình bày cụ thể một vài nghiên cứu lien quan. Họ làm gì, làm như thế nào, kết quả là gì. Ưu và nhược điểm của họ. Thông thường sẽ nêu một số nhược điểm mà nghiên cứu của chúng ta sẽ khắc phục.
-    \item Trình bày nghiên cứu mới của mình. Mục đích của nghiên cứu là gì, tại sao nó quan trọng và cần phải nghiên cứu. Liệt kê các câu hỏi và giả thuyết nghiên cứu. Phát hiện hoăc nghiên cứu của bạn là gì, giá trị của nó ra sao.
-    \item Nêu lên cấu trúc bài nghiên cứu
+    \item Nhận dạng biển số. Tính năng phát hiện đối tượng được sử dụng thông qua việc lưu giữ lại hình ảnh và phát hiện các đối tượng cụ thể như xe cộ, phương tiện đi lại trên bức ảnh đó.
+    \item Phát hiện và nhận dạng khuôn mặt: phát hiện khuôn mặt trong hình ảnh hoặc ai trong hình ảnh đó.
+    \item Theo dõi đối tượng: công nghệ này có thể ứng dụng để theo dõi chuyển động của một đối tượng hay đồ vật cụ thể.
+    \item Ô tô tự lái: sử dụng nhằm phát hiện từng đối tượng xung quanh xe để tránh va chạm, tuân thủ luật giao thông.
 \end{itemize}
-
-Trong trường hợp kết quá nghiên cứu là một công cụ hoàn chỉnh, phần này cũng nê nói rõ đầu vào, đầu ra của ứng dụng là gì. Nếu là học máy, nêu khái quát về bộ dữ liệu sử dụng
