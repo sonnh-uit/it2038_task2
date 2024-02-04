@@ -13,6 +13,7 @@
 \RequirePackage{fancyhdr,hyperref}
 \hypersetup{urlcolor=blue,linkcolor=black,citecolor=black,colorlinks=true} 
 \RequirePackage[vietnamese,english]{babel}
+\RequirePackage{listings}
 \usetikzlibrary{calc}
 
 % Renew, new command
@@ -28,6 +29,7 @@
 
 \renewcommand{\thesection}{\arabic{section}}
 \renewcommand{\thesubsection}{\thesection.\arabic{subsection}}
+\renewcommand*{\lstlistingname}{Đoạn mã}
 
 % \patchcmd{\thebibliography}{\chapter*}{\section*}{}{}
 \def\headerbox {
@@ -111,4 +113,23 @@
         {\large{\centering\MakeUppercase{\textbf{Student \\ \@studentname}}}}
         \vfill
     \end{center}
+}
+
+
+\lstset{
+  language=Bash,
+  frame=tb,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=left,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
 }

@@ -21,4 +21,13 @@ Các phần dưới, học viên tiến hành sử dụng các API mà không s�
 
 \textbf{TensorFlow Object Detection API} là một open-source framework để xây dựng các mô hình object detection và image segmentation có thể localize nhiều đối tượng trong cùng một hình ảnh. Framework hỗ trợ cả 2 phiên bản tensorflow nhưng được khuyến khích dùng version 2.
 
-Nhằm minh họa phần sử dụng API này, học viên sử dụng document của Tensorflow\cite{tensorflowapi}. T
+Nhằm minh họa phần sử dụng API này, học viên sử dụng document của Tensorflow\cite{tensorflowapi}. Code sử dụng được trình bày trong \cite{tensorflowcode}.
+
+Trong ví dụ minh họa này, hình ảnh được download từ internet thông qua url, đưa vào local API của Tensoflow để xử lý, kết quả được hiển thị như hình \ref{fig:tensor_result}. Trong đó bên trái là hình ảnh mẫu từ tài hướng dẫn, hinh bên phải là hình lấy từ internet, thời gian xử lý lần lượt là 28.4 và 30.3 giây.
+
+\begin{figure}
+    \centering
+    \includegraphics[scale=0.25]{../code/processed/processed.jpg}\includegraphics[scale=0.25]{../code/processed/my_image.jpg}
+    \caption{Kết quả của Tensorflow API}
+    \label{fig:tensor_result}
+\end{figure}
