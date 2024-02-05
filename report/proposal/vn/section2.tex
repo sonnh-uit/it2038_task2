@@ -49,6 +49,40 @@ Sử dụng hình ảnh tùy chọn tương tự ví dụ với \textit{TensorFl
 
 \subsection{MXNet GluonCV}
 
-\textbf{MXNet GluonCV} là một framework đang được phát triển bởi Apache Software Foundation \cite{apacheglucon,gluoncvnlp2020}. Nó hỗ trợ nhiều bài toán trong xử lý ảnh như Image Classification, Object Detection, Semantic Segmentation, Instance Segmentation\dots
+\textbf{MXNet GluonCV} là một framework đang được phát triển bởi Apache Software Foundation \cite{apacheglucon,gluoncvnlp2020}. Nó hỗ trợ nhiều bài toán trong xử lý ảnh như Image Classification, Object Detection, Semantic Segmentation, Instance Segmentation\dots Vì vậy, ngoài các ứng dụng của nó, lượng tài liệu tham khảo và các ví dụ cũng được trình bày rất chi tiết và dễ hiểu.
 
-Vì vậy, trong 
+Vì vậy, trong \cite{gluonCVcode}, học viên sẽ trình bày các ứng dụng cùng các mô hình có hỗ trợ.
+
+Đối với bài toán Object Detection, có 3 mô hình là SSD, Faster RCNN và YOLO có ví dụ, kết quả predict theo thứ tự từ trái sang được thể hiện trong hình \ref{fig:gluoncv-detection}
+
+\begin{figure}
+    \centering
+    \includegraphics[scale=0.35]{../code/processed/gluon_ssd.png}\includegraphics[scale=0.35]{../code/processed/gluon_faster_rcnn.png}\includegraphics[scale=0.35]{../code/processed/gluon_yolo3.png}
+    \caption{Kết quả Object Detection của GluonCV}
+    \label{fig:gluoncv-detection}
+\end{figure}
+
+Đối với bài toán Segmentation GluonCV hỗ trợ cả instance và semantic, kết quả pre-trained predict thể hiện trong hình \ref{fig:gluon_segmentation}. 
+
+\begin{figure}
+    \centering
+    \includegraphics[scale=0.3]{../code/processed/gluon_segmentation.png}
+    \includegraphics[scale=0.2]{../code/processed/FCN_sematic.png}
+    \caption{Kết quả Segmentation của GluonCV}
+    \label{fig:gluon_segmentation}
+\end{figure}
+
+Do giới hạn về thời gian, các ứng dụng khác của GluonCV không được hiện thực hết, có thể tham khảo thêm tại \cite{gluonCVdocument}.
+
+\subsection{MMDetection}
+
+MMDetection là một opensource framework hỗ trợ bài toán object detection được phát triển bởi OpenMMLab\cite{OpenMMLab}.
+
+So với các thư viện trước, MMDetection khá dễ cài đặt và sử dụng, chỉ cần theo hướng dẫn tại document và chạy thử nghiệm, kết quả trả về cho ta hình ảnh predict như hình \ref{fig:MMDetection}
+
+\begin{figure}
+    \centering
+    \includegraphics[scale=0.3]{../code/MMDetection/mmdetection/outputs/vis/tmpb1lbm2dd.jpg}
+    \caption{Kết quả detection của MMDetection}
+    \label{fig:MMDetection}
+\end{figure}
