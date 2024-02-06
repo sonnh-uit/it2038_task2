@@ -1,4 +1,4 @@
-# This is report of Lab 2_Object Detection Libraries, couse IT2038.CH1801
+# IT2038.CH1801 - Lab 2_Object Detection Libraries report
 
 ## Requirements:
 Studying the following object detection libraries.
